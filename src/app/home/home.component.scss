@@ -1,0 +1,71 @@
+$orange: #F5631A;
+$blue: #2BA7EE;
+$light-pink: #EE89ED;
+$dark-blue: #0F55D0;
+$darker-blue:#0B3084;
+$purple: #9809D1;
+$red: #ED1C1C;
+$green: #2DE871;
+$yellow: #F5EB24;
+$yellow: #F5EB24;
+$yellow: #F5EB24;
+
+.color{
+    color: white;
+}
+.orange{
+    background-color: $orange;
+}
+.blue{
+    background-color: $blue;
+}
+.light-pink{
+    background-color: $light-pink;
+}
+.dark-blue{
+    background-color: $dark-blue;
+}
+.yellow{
+    background-color: $yellow;
+}
+.darker-blue{
+    background-color: $darker-blue;
+}
+.purple{
+    background-color: $purple;
+}
+.red{
+    background-color: $red;
+}
+.green{
+    background-color: $green;
+}
+p,h3,h2{
+    font-family: quicksand;
+}
+mat-chip{
+    font-family: merri;
+}
+.main{
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+@media (max-width: 600px) {
+    mat-chip{
+        font-size: 12px;
+    }
+    h2{
+        font-size:18px;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+@media (min-width: 600px) {
+    mat-chip{
+        font-size: 16px;
+    }
+    
+}

@@ -1,0 +1,45 @@
+h4,h3{
+    color: #607d8b;
+}
+.no-deco{
+    margin-bottom: 30px;
+}
+.justify{
+    text-align: justify;
+}
+blockquote{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.main{
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 20px;
+}
+.header{
+    margin-bottom: 50px;
+}
+*{
+    font-family: stick;
+}
+img{
+    height: 155px !important;
+    width: 120px !important;
+}
+@media (max-width: 730px) {
+    img{
+        display: none;
+    }
+    .hide{
+        display: none;
+    }
+}
+@media (min-width: 730px) {
+    img{
+        display: block;
+    }
+    .hide{
+        display: block;
+    } 
+}

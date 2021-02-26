@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import './theme.scss';
+
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+}
+.container{
+    padding-bottom: 50px;
+}
+
+
+@font-face {
+    font-family: quicksand;
+    src: url(assets/fonts/quicksand.ttf) format("truetype");
+}
+@font-face {
+    font-family: merri;
+    src: url(assets/fonts/merriweather.ttf) format("truetype");
+}
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 90%;
+        margin-left: 5%;
+    }
+}
+@media (min-width: 600px) {
+    .container{
+        max-width: 60%;
+        margin-left: 20%;
+    }
+}

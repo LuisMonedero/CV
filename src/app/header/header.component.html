@@ -1,0 +1,24 @@
+<mat-toolbar color="accent">
+    <mat-toolbar-row style="place-content: stretch space-between;">
+        <div fxLayout="row">
+            <button mat-button routerLink="/home" routerLinkActive='active'>
+                <mat-icon>home</mat-icon>
+                <span class="logo">Luis Monedero</span>
+            </button>
+            <button class="buttons" *ngIf="!deviceXs" fxHide fxShow.gt-sm mat-button routerLink="/curriculum" routerLinkActive='active'>Curriculum</button>
+            <button class="buttons" *ngIf="!deviceXs" fxHide fxShow.gt-sm mat-button routerLink="/projects" routerLinkActive='active'>Proyectos</button>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/luis-monedero-rodr%C3%ADguez/" target="_blank">
+                <button mat-button class="buttons">
+                    <fa-icon [icon]="faIdCard"></fa-icon>
+                    <span class="logo" *ngIf="!deviceXs" class="download" fxHide.xs>Mi Linkedin</span>
+                </button>
+            </a>
+        </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="deviceXs" style="place-content: stretch space-around;">
+        <button class="buttons" fxHide fxShow.gt-sm mat-button routerLink="/curriculum" routerLinkActive='active'>Curriculum</button>
+        <button class="buttons" fxHide fxShow.gt-sm mat-button routerLink="/projects" routerLinkActive='active'>Projects</button>
+    </mat-toolbar-row>
+</mat-toolbar>
